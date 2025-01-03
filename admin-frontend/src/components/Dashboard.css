@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e6e6fa, #ffffff); /* Lavender to white gradient */
+    height: 100vh;
+    color: #333;
+  }
+  
+  .dashboard-container {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+  }
+  
+  .dashboard-content {
+    display: flex;
+    width: 50%; /* Decrease width of the white box */
+    height: 50%; /* Decrease height of the white box */
+    background-color: #d3d3d3; /* Darker grey for better contrast */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: -5%; /* Move the box slightly upward */
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .dashboard-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50; /* Dark green for a professional look */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); /* 3D effect */
+  }
+  
+  .dashboard-button:hover {
+    background-color: #45a049; /* Slightly darker green for hover */
+    transform: scale(1.1); /* Button enlarges when hovered */
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for hover effect */
+  }
+  
+  .image-section {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

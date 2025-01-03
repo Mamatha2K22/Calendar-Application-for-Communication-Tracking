@@ -1,0 +1,46 @@
+/* App.css */
+.highlight-red {
+  background-color: red;
+}
+
+.highlight-yellow {
+  background-color: yellow;
+}
+
+.highlight-green {
+  background-color: green;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.communication-item {
+  position: relative;
+}
+
+.communication-item:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  z-index: 10;
+}
